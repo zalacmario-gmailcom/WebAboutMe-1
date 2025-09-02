@@ -7,27 +7,45 @@
 
  body {
     background-color: #e4e4e4;
-    
  }
 
-header h1{
+header{
+    background-color: #ffffff;
     position: fixed;
-    top: 5%;
-    left: 20%;
-    translate: -50% -50%;
+    display: flex;
+    align-items: baseline;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
+header h1{
+    padding-left: 5%;
+    width: 50%;
+}
+
+header h1 a{
+    text-decoration: none;
+    color: #000;
+}
+
+header .navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 10px;    
+}
 
 
 /* första sidan hobis översikt och bild */
-.hobi-list{
+.hobby-list{
     display: flex;
     align-items: top;
-    padding-top: 10%;
+    padding-top: 13%;
     justify-content:center;
 }
 
-.hobbis p{
+.hobbies p{
     margin-bottom: -2px;
     text-decoration: underline;
     text-decoration-color: #000;
@@ -37,14 +55,14 @@ img{
     max-inline-size: 100%;
     height: auto;
     display: block;
-    border-radius: 15%;
+    border-radius: 10%;
 }
 
 @media(max-width: 992px) {
-    .hobi-list{
+    .hobby-list{
         display: flex;
         flex-direction: column;
-        padding-top: 30%;
+        padding-top: 35%;
         padding-left: 5%;
     }
     
