@@ -1,13 +1,12 @@
  *{
-    padding-left: 1%;
-    padding-right: 1%;
     box-sizing: border-box;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
  }
 
  body {
-    background-color: #e4e4e4;
- }
+    width: 100%;
+    margin: auto; 
+}
 
 header{
     background-color: #ffffff;
@@ -41,14 +40,18 @@ header .navbar{
 .hobby-list{
     display: flex;
     align-items: top;
-    padding-top: 13%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 12%;
+    padding-bottom: 10%;
     justify-content:center;
+    background-color: #e0c775;
 }
 
 .hobbies p{
     margin-bottom: -2px;
     text-decoration: underline;
-    text-decoration-color: #000;
+    text-decoration-color: #000000;
 }
 
 img{
@@ -56,7 +59,43 @@ img{
     height: auto;
     display: block;
     border-radius: 10%;
+    margin-left: 5%;
 }
+
+@media(max-width: 992px) {
+    .hobby-list{
+        display: flex;
+        flex-direction: column;
+        padding-top: 35%;
+        padding-left: 5%;
+    }
+    
+    img{
+        width: 50%;
+    }
+}
+
+/* nästa secktion CV & erfaranheter */
+.CV-list{
+    color: aliceblue;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 12%;
+    padding-bottom: 20%;
+    background-color: #3560a0;
+    width: 100%;
+}
+
+.CV h3{
+    margin-bottom: -2px;
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+}
+
+.CV-list .CV p{
+    display: flex;
+}
+
 
 @media(max-width: 992px) {
     .hobby-list{
