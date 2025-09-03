@@ -32,11 +32,16 @@ header .navbar{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    gap: 10px;    
+    gap: 16px; 
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #000;
 }
 
 
-/* första sidan hobis översikt och bild */
+/* Sektion hobis och bild */
 .hobby-list{
     display: flex;
     align-items: top;
@@ -46,6 +51,10 @@ header .navbar{
     padding-bottom: 10%;
     justify-content:center;
     background-color: #e0c775;
+}
+
+.hobbies h3{
+    text-decoration: underline;
 }
 
 .hobbies p{
@@ -75,7 +84,7 @@ img{
     }
 }
 
-/* nästa secktion CV & erfaranheter */
+/* Secktion CV & erfaranheter */
 .CV-list{
     color: aliceblue;
     padding-left: 5%;
@@ -86,26 +95,55 @@ img{
     width: 100%;
 }
 
-.CV h3{
-    margin-bottom: -2px;
+.CV-list h3{
     text-decoration: underline;
     text-decoration-color: #ffffff;
+    font-weight: bold;
 }
 
-.CV-list .CV p{
+.CV{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    text-align: center;
+}
+
+.CV div{
+    background-color: #e0c775;
+    border-radius: 20px;
+}
+
+.CV p{
+    color: #000;
+    margin: 10px;
+}
+
+@media(max-width: 662px) {
+    .CV{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .CV p{
+    margin: 0px;
+}
+}
+
+/* Secktion CV & erfaranheter */
+.why-list{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 12%;
+    padding-bottom: 20%;
+    background-color: #e0c775;
+    width: 100%;
+}
+
+.why-list h3{
+    text-decoration: underline;
+}
+
+.why{
     display: flex;
 }
 
-
-@media(max-width: 992px) {
-    .hobby-list{
-        display: flex;
-        flex-direction: column;
-        padding-top: 35%;
-        padding-left: 5%;
-    }
-    
-    img{
-        width: 50%;
-    }
-}
