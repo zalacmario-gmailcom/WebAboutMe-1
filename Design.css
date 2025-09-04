@@ -119,6 +119,9 @@ img{
 }
 
 @media(max-width: 662px) {
+    .CV-list{
+        padding-bottom: 40%;
+    }
     .CV{
         display: flex;
         flex-direction: column;
@@ -147,3 +150,55 @@ img{
     display: flex;
 }
 
+tbody{ 
+    text-align: left;
+    display: block;
+    block-size: 50px;
+    margin-left: 100px;
+    width: 500px;
+    block-size: 50px;
+}
+
+tbody, th, td {
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 5px;
+    border-left: 1px solid #000;
+}
+
+td a{
+    color: #000;
+}
+
+@media(max-width: 662px) {
+
+    .why-list{
+        padding-bottom: 40%;
+    }
+    
+    .why{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    tbody{
+        margin-left: 0px;
+        width: 300px;
+    }
+    
+}
+
+iframe{
+    margin-left: 25%;
+}
+
+@media(max-width: 662px) {
+    iframe{
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 200px;
+    }  
+}
