@@ -40,6 +40,12 @@ header .navbar{
     color: #000;
 }
 
+@media (max-width: 999px) {
+    .navbar{
+        visibility: hidden;
+    }
+}
+
 
 /* Sektion hobis och bild */
 .hobby-list{
